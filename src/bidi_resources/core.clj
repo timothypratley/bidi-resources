@@ -9,5 +9,7 @@
 (def my-routes ["/" [["hello" (fn [req] (response "Hello to you too"))]
                      ["" (resources {:prefix "public/"})]]])
 
+(prn "***" (bidi/match-route my-routes "/index.html"))
+
 (def handler
   (wrap-defaults (make-handler my-routes) site-defaults))
