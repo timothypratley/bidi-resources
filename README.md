@@ -1,10 +1,14 @@
 # bidi-resources
 
-A Clojure library designed to ... well, that part is up to you.
+Most basic of bidi routes
 
 ## Usage
 
-FIXME
+`lein ring server-headless`
+
+`curl localhost:3000/index.html`
+`curl localhost:3000/hello`
+'curl localhost:3000/index.html2`
 
 ## License
 
